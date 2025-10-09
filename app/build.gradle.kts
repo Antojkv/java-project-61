@@ -41,3 +41,6 @@ tasks.withType<JavaCompile> {
 tasks.withType<JavaExec> {
     jvmArgs("--enable-preview")
 }
+tasks.getByName("run", JavaExec::class) {
+    standardInput = System.`in`
+}
