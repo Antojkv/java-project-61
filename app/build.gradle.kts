@@ -4,6 +4,13 @@ plugins {
     id("se.patrikerdes.use-latest-versions") version "0.2.19"
     id("com.github.ben-manes.versions") version "0.53.0"
     id("com.diffplug.spotless") version "7.2.1"
+    id("org.sonarqube") version "6.3.1.5724"
+}
+sonar {
+    properties {
+        property("sonar.projectKey", "Antojkv_java-project-61")
+        property("sonar.organization", "antojkv")
+    }
 }
 
 group = "hexlet.code"
