@@ -5,7 +5,13 @@ plugins {
     id("com.github.ben-manes.versions") version "0.53.0"
     id("com.diffplug.spotless") version "7.2.1"
     id("org.sonarqube") version "6.3.1.5724"
+    id("checkstyle")
 }
+
+checkstyle {
+    toolVersion = "10.12.4"
+}
+
 sonar {
     properties {
         property("sonar.projectKey", "Antojkv_java-project-61")
