@@ -2,7 +2,9 @@ package hexlet.code;
 import java.util.Scanner;
 import java.security.SecureRandom;
 
-public class Even {
+public final class Even {
+    private Even() {
+    }
     public static boolean generateNumber(String userName) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'");
@@ -32,4 +34,3 @@ public class Even {
         return true;
     }
 }
-
