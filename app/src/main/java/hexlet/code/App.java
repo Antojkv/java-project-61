@@ -14,10 +14,9 @@ class App {
         System.out.println("0 - Exit");
 
         Scanner scanner = new Scanner(System.in);
-        String digit = scanner.next();
-        System.out.println("Your choice: " + digit);
+        System.out.print("Your choice: ");
 
-        switch (digit) {
+        switch (scanner.next()) {
             case "1":
                 System.out.println("Welcome to the Brain Games!");
                 Cli.greetUser();
