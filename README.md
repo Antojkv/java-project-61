@@ -7,4 +7,5 @@
 
 Аскинемы:
 Even: https://asciinema.org/a/C2DaZpopjiwCQOdQGr5ldJEa4
-Calculator: https://asciinema.org/connect/430cccd1-181d-4929-a343-ac77936151c7 
+
+Calculator: https://asciinema.org/a/QIkWy2KinHzcdj0LULvdMOfM0
