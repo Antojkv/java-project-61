@@ -1,6 +1,6 @@
 package hexlet.code.games;
-import hexlet.code.Engine;
 
+import hexlet.code.Engine;
 import java.security.SecureRandom;
 
 public class Even {

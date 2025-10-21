@@ -6,6 +6,8 @@
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=Antojkv_java-project-61&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=Antojkv_java-project-61)
 
 Аскинемы:
-Even: https://asciinema.org/a/C2DaZpopjiwCQOdQGr5ldJEa4
+"Even" https://asciinema.org/a/C2DaZpopjiwCQOdQGr5ldJEa4
 
-Calculator: https://asciinema.org/a/QIkWy2KinHzcdj0LULvdMOfM0
+"Calculator" https://asciinema.org/a/QIkWy2KinHzcdj0LULvdMOfM0
+
+"GCD" https://asciinema.org/a/anWD6GPnBTcWTBLCfvbMGZeV6
