@@ -4,7 +4,7 @@ import hexlet.code.Engine;
 import java.security.SecureRandom;
 
 public class Gcd {
-    private static final String DESCRIPTION = "Find the greatest common divisor of given numbers.";
+
 
     private static int isGCD(int a, int b) {
         while (b != 0) {
@@ -16,6 +16,7 @@ public class Gcd {
     }
 
     public static void startGame() {
+        String description = "Find the greatest common divisor of given numbers.";
         String[][] data = new String[Engine.getRoundsCount()][2];
         SecureRandom random = new SecureRandom();
 
@@ -28,7 +29,6 @@ public class Gcd {
             data[i][0] = question;
             data[i][1] = correctAnswer;
         }
-        Engine.run(DESCRIPTION, data);
+        Engine.run(description, data);
     }
-
 }

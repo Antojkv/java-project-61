@@ -4,8 +4,6 @@ import hexlet.code.Engine;
 import java.security.SecureRandom;
 
 public class Calculator {
-    private static final String DESCRIPTION = "What is the result of the expression?";
-    private static final char[] OPERATORS = {'+', '-', '*'};
 
     public static int calculate(int operand1, int operand2, char operator) {
         switch (operator) {
@@ -21,13 +19,16 @@ public class Calculator {
     }
 
     public static void startGame() {
+        String description = "What is the result of the expression?";
+        char[] operators = {'+', '-', '*'};
         String[][] data = new String[Engine.getRoundsCount()][2];
         SecureRandom random = new SecureRandom();
+
 
         for (int i = 0; i < Engine.getRoundsCount(); i++) {
             int number1 = random.nextInt(100) + 1;
             int number2 = random.nextInt(100) + 1;
-            char operator = OPERATORS[random.nextInt(OPERATORS.length)];
+            char operator = operators[random.nextInt(operators.length)];
 
             String question = number1 + " " + operator + " " + number2;
             String correctAnswer = String.valueOf(calculate(number1, number2, operator));
@@ -36,8 +37,6 @@ public class Calculator {
             data[i][1] = correctAnswer;
         }
 
-        Engine.run(DESCRIPTION, data);
+        Engine.run(description, data);
     }
 }
-
-

@@ -11,3 +11,5 @@
 "Calculator" https://asciinema.org/a/QIkWy2KinHzcdj0LULvdMOfM0
 
 "GCD" https://asciinema.org/a/anWD6GPnBTcWTBLCfvbMGZeV6
+
+"Progression" https://asciinema.org/a/4cwJUcnV4TcEFSpdqMrIa3xjf
