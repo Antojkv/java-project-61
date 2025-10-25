@@ -13,3 +13,5 @@
 "GCD" https://asciinema.org/a/anWD6GPnBTcWTBLCfvbMGZeV6
 
 "Progression" https://asciinema.org/a/4cwJUcnV4TcEFSpdqMrIa3xjf
+
+"Prime" https://asciinema.org/a/KIxIZnfYvYP0D6PokMo9QKryI
