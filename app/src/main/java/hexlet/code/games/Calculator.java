@@ -23,11 +23,12 @@ public class Calculator {
         char[] operators = {'+', '-', '*'};
         String[][] data = new String[Engine.getRoundsCount()][2];
         SecureRandom random = new SecureRandom();
+        int numbersCount = 99;
 
 
         for (int i = 0; i < Engine.getRoundsCount(); i++) {
-            int number1 = random.nextInt(100) + 1;
-            int number2 = random.nextInt(100) + 1;
+            int number1 = random.nextInt(numbersCount) + 1;
+            int number2 = random.nextInt(numbersCount) + 1;
             char operator = operators[random.nextInt(operators.length)];
 
             String question = number1 + " " + operator + " " + number2;

@@ -8,10 +8,11 @@ public class Even {
         String description = "Answer 'yes' if the number is even, otherwise answer 'no'.";
         String[][] data = new String[Engine.getRoundsCount()][2];
         SecureRandom random = new SecureRandom();
+        int numbersCount = 99;
 
 
         for (int i = 0; i < Engine.getRoundsCount(); i++) {
-            int number = random.nextInt(100) + 1;
+            int number = random.nextInt(numbersCount) + 1;
             String question = String.valueOf(number);
             String correctAnswer = number % 2 == 0 ? "yes" : "no";
 
