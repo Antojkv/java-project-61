@@ -16,7 +16,7 @@ public class Progression {
         String description = "What number is missing in the progression?";
         String[][] data = new String[Engine.getRoundsCount()][2];
         SecureRandom random = new SecureRandom();
-        int startNumber = 50;
+        int startNumber = 60;
         int stepNumber = 10;
         int hiddenNumber = 10;
 

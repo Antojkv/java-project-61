@@ -19,7 +19,7 @@ public class Gcd {
         String description = "Find the greatest common divisor of given numbers.";
         String[][] data = new String[Engine.getRoundsCount()][2];
         SecureRandom random = new SecureRandom();
-        int numbersCount = 99;
+        int numbersCount = 100;
 
         for (int i = 0; i < Engine.getRoundsCount(); i++) {
             int number1 = random.nextInt(numbersCount) + 1;
