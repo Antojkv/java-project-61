@@ -4,6 +4,8 @@ import hexlet.code.Engine;
 import java.security.SecureRandom;
 
 public class Prime {
+    static final int NUMBERS_COUNT = 100;
+
     public static boolean isPrime(int number) {
         if (number < 2) {
             return false;
@@ -22,9 +24,8 @@ public class Prime {
         SecureRandom random = new SecureRandom();
 
         for (int i = 0; i < Engine.getRoundsCount(); i++) {
-            int numbersCount = 100;
 
-            int number = random.nextInt(numbersCount) + 1;
+            int number = random.nextInt(NUMBERS_COUNT) + 1;
             String question = String.valueOf(number);
             String correctAnswer = isPrime(number) ? "yes" : "no";
 

@@ -4,6 +4,11 @@ import hexlet.code.Engine;
 import java.security.SecureRandom;
 
 public class Progression {
+    static final int START_NUMBER = 60;
+    static final int STEP_NUMBER = 10;
+    static final int HIDDEN_NUMBER = 10;
+    static final int LENGTH = 10;
+
     public static String[] generateProgression(int start, int step, int length) {
         String[] progression = new String[length];
         for (int index = 0; index < length; index++) {
@@ -20,16 +25,12 @@ public class Progression {
 
 
         for (int i = 0; i < Engine.getRoundsCount(); i++) {
-            int startNumber = 60;
-            int stepNumber = 10;
-            int hiddenNumber = 10;
-            int length = 10;
 
-            int start = random.nextInt(startNumber) + 1;
-            int step = random.nextInt(stepNumber) + 1;
-            int hiddenIndex = random.nextInt(hiddenNumber);
+            int start = random.nextInt(START_NUMBER) + 1;
+            int step = random.nextInt(STEP_NUMBER) + 1;
+            int hiddenIndex = random.nextInt(HIDDEN_NUMBER);
 
-            String[] progression = generateProgression(start, step, length);
+            String[] progression = generateProgression(start, step, LENGTH);
             String correctAnswer = progression[hiddenIndex];
             progression[hiddenIndex] = "..";
 

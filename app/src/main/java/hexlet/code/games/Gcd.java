@@ -4,7 +4,7 @@ import hexlet.code.Engine;
 import java.security.SecureRandom;
 
 public class Gcd {
-
+    static final int NUMBERS_COUNT = 100;
 
     private static int isGCD(int a, int b) {
         while (b != 0) {
@@ -21,10 +21,9 @@ public class Gcd {
         SecureRandom random = new SecureRandom();
 
         for (int i = 0; i < Engine.getRoundsCount(); i++) {
-            int numbersCount = 100;
 
-            int number1 = random.nextInt(numbersCount) + 1;
-            int number2 = random.nextInt(numbersCount) + 1;
+            int number1 = random.nextInt(NUMBERS_COUNT) + 1;
+            int number2 = random.nextInt(NUMBERS_COUNT) + 1;
             String question = number1 + " " + number2;
             String correctAnswer = String.valueOf(isGCD(number1, number2));
 

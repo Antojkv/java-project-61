@@ -4,6 +4,7 @@ import hexlet.code.Engine;
 import java.security.SecureRandom;
 
 public class Calculator {
+    static final int NUMBERS_COUNT = 100;
 
     public static int calculate(int operand1, int operand2, char operator) {
         switch (operator) {
@@ -25,10 +26,9 @@ public class Calculator {
         SecureRandom random = new SecureRandom();
 
         for (int i = 0; i < Engine.getRoundsCount(); i++) {
-            int numbersCount = 100;
 
-            int number1 = random.nextInt(numbersCount) + 1;
-            int number2 = random.nextInt(numbersCount) + 1;
+            int number1 = random.nextInt(NUMBERS_COUNT) + 1;
+            int number2 = random.nextInt(NUMBERS_COUNT) + 1;
             char operator = operators[random.nextInt(operators.length)];
 
             String question = number1 + " " + operator + " " + number2;
