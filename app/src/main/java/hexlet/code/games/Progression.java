@@ -16,16 +16,18 @@ public class Progression {
         String description = "What number is missing in the progression?";
         String[][] data = new String[Engine.getRoundsCount()][2];
         SecureRandom random = new SecureRandom();
-        int startNumber = 60;
-        int stepNumber = 10;
-        int hiddenNumber = 10;
+
 
 
         for (int i = 0; i < Engine.getRoundsCount(); i++) {
+            int startNumber = 60;
+            int stepNumber = 10;
+            int hiddenNumber = 10;
+            int length = 10;
+
             int start = random.nextInt(startNumber) + 1;
             int step = random.nextInt(stepNumber) + 1;
             int hiddenIndex = random.nextInt(hiddenNumber);
-            int length = 10;
 
             String[] progression = generateProgression(start, step, length);
             String correctAnswer = progression[hiddenIndex];

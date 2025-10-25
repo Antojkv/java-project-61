@@ -20,9 +20,10 @@ public class Prime {
         String description = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
         String[][] data = new String[Engine.getRoundsCount()][2];
         SecureRandom random = new SecureRandom();
-        int numbersCount = 100;
 
         for (int i = 0; i < Engine.getRoundsCount(); i++) {
+            int numbersCount = 100;
+
             int number = random.nextInt(numbersCount) + 1;
             String question = String.valueOf(number);
             String correctAnswer = isPrime(number) ? "yes" : "no";
