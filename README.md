@@ -7,19 +7,19 @@
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Antojkv_java-project-61&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=Antojkv_java-project-61)
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=Antojkv_java-project-61&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=Antojkv_java-project-61)
 
-**Игры разума** - это коллекция консольных математических игр, разработанных на Java.
+### **Игры разума** - это коллекция консольных математических игр, разработанных на Java.
 
 #### В проект входят следующие игры:
 
-#### Even - ###### Определите, является ли число четным
+#### Even - *Определите, является ли число четным*
 
-#### Calculator - ###### Решите математическое выражение
+#### Calculator - *Решите математическое выражение*
 
-#### GCD - ###### Найдите наибольший общий делитель
+#### GCD - *Найдите наибольший общий делитель*
 
-#### Progression - ###### Найдите пропущенное число в прогрессии
+#### Progression - *Найдите пропущенное число в прогрессии*
 
-#### Prime - ###### Определите, является ли число простым
+#### Prime - *Определите, является ли число простым*
 
 ### Установка
 
@@ -31,18 +31,17 @@ cd java-project-61/app
 
 2. **Способы запуска:**
 
-make run        
 ###### Запуск приложения напрямую
+make run
 
-make build
 ###### Сборка проекта
+make build
 
-make run-dist
 ###### Запуск после сборки 
+make run-dist
 
-make clean
 ###### Очистка собранных файлов
-
+make clean
 
 ### Аскинемы:
 
