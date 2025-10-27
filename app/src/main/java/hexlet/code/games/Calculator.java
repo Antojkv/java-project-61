@@ -1,5 +1,6 @@
 package hexlet.code.games;
 
+import hexlet.code.App;
 import hexlet.code.Engine;
 import java.security.SecureRandom;
 
@@ -7,6 +8,7 @@ public class Calculator {
     static final int NUMBERS_COUNT = 100;
 
     public static int calculate(int operand1, int operand2, char operator) {
+
         switch (operator) {
             case '+':
                 return operand1 + operand2;
@@ -15,17 +17,17 @@ public class Calculator {
             case '*':
                 return operand1 * operand2;
             default:
-                return 0;
+                throw new RuntimeException("Unknown user choice" +  App.userChoice);
         }
     }
 
     public static void startGame() {
         String description = "What is the result of the expression?";
         char[] operators = {'+', '-', '*'};
-        String[][] data = new String[Engine.getRoundsCount()][2];
+        String[][] data = new String[Engine.ROUNDS][2];
         SecureRandom random = new SecureRandom();
 
-        for (int i = 0; i < Engine.getRoundsCount(); i++) {
+        for (int i = 0; i < Engine.ROUNDS; i++) {
 
             int number1 = random.nextInt(NUMBERS_COUNT) + 1;
             int number2 = random.nextInt(NUMBERS_COUNT) + 1;

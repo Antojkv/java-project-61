@@ -19,12 +19,12 @@ public class Progression {
 
     public static void startGame() {
         String description = "What number is missing in the progression?";
-        String[][] data = new String[Engine.getRoundsCount()][2];
+        String[][] data = new String[Engine.ROUNDS][2];
         SecureRandom random = new SecureRandom();
 
 
 
-        for (int i = 0; i < Engine.getRoundsCount(); i++) {
+        for (int i = 0; i < Engine.ROUNDS; i++) {
 
             int start = random.nextInt(START_NUMBER) + 1;
             int step = random.nextInt(STEP_NUMBER) + 1;

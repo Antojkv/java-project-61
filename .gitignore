@@ -15,10 +15,6 @@ out/
 bin/
 *.tmp
 
-# OS
-.DS_Store
-Thumbs.db
-
 # Logs
 *.log
 logs/

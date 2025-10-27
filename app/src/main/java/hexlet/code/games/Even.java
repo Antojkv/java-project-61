@@ -8,11 +8,11 @@ public class Even {
 
     public static void startGame() {
         String description = "Answer 'yes' if the number is even, otherwise answer 'no'.";
-        String[][] data = new String[Engine.getRoundsCount()][2];
+        String[][] data = new String[Engine.ROUNDS][2];
         SecureRandom random = new SecureRandom();
 
 
-        for (int i = 0; i < Engine.getRoundsCount(); i++) {
+        for (int i = 0; i < Engine.ROUNDS; i++) {
 
             int number = random.nextInt(NUMBERS_COUNT) + 1;
             String question = String.valueOf(number);

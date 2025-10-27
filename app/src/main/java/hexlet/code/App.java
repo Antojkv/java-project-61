@@ -7,7 +7,8 @@ import hexlet.code.games.Progression;
 import hexlet.code.games.Prime;
 import java.util.Scanner;
 
-class App {
+public class App {
+    public static String userChoice;
     public static void main(String[] args) {
         System.out.println("Please enter the game number and press Enter.");
         System.out.println("1 - Greet");
@@ -20,8 +21,9 @@ class App {
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Your choice: ");
+        userChoice = scanner.next();
 
-        switch (scanner.next()) {
+        switch (userChoice) {
             case "1":
                 System.out.println("Welcome to the Brain Games!");
                 Cli.greetUser();
@@ -45,7 +47,7 @@ class App {
                 System.out.println("Goodbye!");
                 break;
             default:
-                System.out.println("Invalid choice");
+                System.out.println("Unknown user choice: " + userChoice);
                 break;
         }
 
