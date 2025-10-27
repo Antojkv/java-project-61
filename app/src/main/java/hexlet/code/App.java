@@ -8,7 +8,6 @@ import hexlet.code.games.Prime;
 import java.util.Scanner;
 
 public class App {
-    public static String userChoice;
     public static void main(String[] args) {
         System.out.println("Please enter the game number and press Enter.");
         System.out.println("1 - Greet");
@@ -21,7 +20,7 @@ public class App {
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Your choice: ");
-        userChoice = scanner.next();
+        String userChoice = scanner.next();
 
         switch (userChoice) {
             case "1":
@@ -50,7 +49,6 @@ public class App {
                 System.out.println("Unknown user choice: " + userChoice);
                 break;
         }
-
         scanner.close();
     }
 }

@@ -1,6 +1,5 @@
 package hexlet.code.games;
 
-import hexlet.code.App;
 import hexlet.code.Engine;
 import java.security.SecureRandom;
 
@@ -17,7 +16,7 @@ public class Calculator {
             case '*':
                 return operand1 * operand2;
             default:
-                throw new RuntimeException("Unknown user choice" +  App.userChoice);
+                throw new RuntimeException("Unknown operator" + operator);
         }
     }
 
