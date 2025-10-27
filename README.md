@@ -9,39 +9,45 @@
 
 **Игры разума** - это коллекция консольных математических игр, разработанных на Java.
 
-## *В проект входят следующие игры*:
+### *В проект входят следующие игры*:
 
-### Even - Определите, является ли число четным
+##### Even - Определите, является ли число четным
 
-### Calculator - Решите математическое выражение
+##### Calculator - Решите математическое выражение
 
-### GCD - Найдите наибольший общий делитель
+##### GCD - Найдите наибольший общий делитель
 
-### Progression - Найдите пропущенное число в прогрессии
+##### Progression - Найдите пропущенное число в прогрессии
 
-### Prime - Определите, является ли число простым
+##### Prime - Определите, является ли число простым
 
-## Установка
+### Установка
 
 1. **Клонируйте репозиторий:**
+
 git clone https://github.com/Antojkv/java-project-61.git
+
 cd java-project-61/app
 
 2. **Способы запуска:**
+
 make run        # Запуск приложения напрямую
+
 make build      # Сборка проекта
+
 make run-dist   # Запуск после сборки 
+
 make clean      # Очистка собранных файлов
 
 
-## Аскинемы:
+### Аскинемы:
 
-### "Even" https://asciinema.org/a/C2DaZpopjiwCQOdQGr5ldJEa4
+##### "Even" https://asciinema.org/a/C2DaZpopjiwCQOdQGr5ldJEa4
 
-### "Calculator" https://asciinema.org/a/QIkWy2KinHzcdj0LULvdMOfM0
+##### "Calculator" https://asciinema.org/a/QIkWy2KinHzcdj0LULvdMOfM0
 
-### "GCD" https://asciinema.org/a/anWD6GPnBTcWTBLCfvbMGZeV6
+##### "GCD" https://asciinema.org/a/anWD6GPnBTcWTBLCfvbMGZeV6
 
-### "Progression" https://asciinema.org/a/4cwJUcnV4TcEFSpdqMrIa3xjf
+##### "Progression" https://asciinema.org/a/4cwJUcnV4TcEFSpdqMrIa3xjf
 
-### "Prime" https://asciinema.org/a/KIxIZnfYvYP0D6PokMo9QKryI
+##### "Prime" https://asciinema.org/a/KIxIZnfYvYP0D6PokMo9QKryI
