@@ -6,7 +6,7 @@ import java.security.SecureRandom;
 public class Gcd {
     static final int NUMBERS_COUNT = 100;
 
-    private static int theGCD(int a, int b) {
+    private static int gcd(int a, int b) {
         while (b != 0) {
             int value = b;
             b = a % b;
@@ -25,7 +25,7 @@ public class Gcd {
             int number1 = random.nextInt(NUMBERS_COUNT) + 1;
             int number2 = random.nextInt(NUMBERS_COUNT) + 1;
             String question = number1 + " " + number2;
-            String correctAnswer = String.valueOf(theGCD(number1, number2));
+            String correctAnswer = String.valueOf(gcd(number1, number2));
 
             data[i][0] = question;
             data[i][1] = correctAnswer;

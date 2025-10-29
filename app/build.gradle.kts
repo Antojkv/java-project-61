@@ -33,7 +33,6 @@ repositories {
 
 dependencies {
     implementation("org.apache.commons:commons-lang3:3.19.0")
-    implementation("org.hibernate.orm:hibernate-core:6.6.0.Final")
 }
 
 application { mainClass.set("hexlet.code.App") }
